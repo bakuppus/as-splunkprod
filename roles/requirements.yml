@@ -1,0 +1,5 @@
+---
+- src: git@github.com:techzard/as-splunk-install.git
+  scm: git
+  version: master
+  name: splunkbaseinstall
