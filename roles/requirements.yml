@@ -3,3 +3,8 @@
   scm: git
   version: master
   name: splunkbaseinstall
+
+- src: git@github.com:techzard/as-splunk-usergroup.git
+  scm: git
+  version: master
+  name: splunkusergroup

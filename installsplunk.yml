@@ -1,0 +1,13 @@
+---
+### This is a playbook for Splunk installation
+
+  - name: Splunk Installation
+    hosts: testsplunkinstall
+    remote_user: root
+    gather_facts: no
+    tasks:
+      - include_vars: group_vars/all_prod_vars.yml
+      - include_role:
+          name: "{{playbook_dir}}/roles/splunkusergroup"
+      - include_role:
+          name: "{{playbook_dir}}/roles/splunkbaseinstall"
