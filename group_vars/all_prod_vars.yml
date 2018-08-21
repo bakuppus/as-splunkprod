@@ -1,9 +1,19 @@
 ---
 # Variables for splunkbaseinstall
-splunk_binary: splunk-7.1.2-a0c72a66db66-Linux-x86_64.tgz
-splunk_binary_url: "https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=7.1.2&product=splunk&filename=splunk-7.1.2-a0c72a66db66-Linux-x86_64.tgz&wget=true"
-install_dir: '/opt'
-splunk_path: '/opt/splunk'
-splunk_check_path: '/opt/splunk/bin'
-splunk_owner: splunkp
+
+# Splunk package file name.
+splunk_pkg_file: splunk-7.1.2-a0c72a66db66-Linux-x86_64.tgz
+# Optional! Splunk download location
+splunk_download_url: "https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=7.1.2&product=splunk&filename=splunk-7.1.2-a0c72a66db66-Linux-x86_64.tgz&wget=true"
+# Splunk home dirctory
+splunk_home: '/opt/splunk'
+# Splunk user
+splunk_user: splunkp
+# Splunk user group
 splunk_group: splunkp
+# Directory to stage splunk software in.
+stage_dir: /tmp/stage
+# Splunk package download location.
+s3_bucket: splunktemplatesar
+# Splunk package s3 key
+splunk_pkg_s3_key: /splunk_installer/{{ splunk_pkg_file }}

@@ -2,7 +2,7 @@
 ### This is a playbook for Splunk installation
 
   - name: Splunk Installation
-    hosts: testsplunkinstall
+    hosts: localhost
     remote_user: root
     gather_facts: no
     tasks:
